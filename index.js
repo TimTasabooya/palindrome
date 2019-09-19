@@ -16,7 +16,7 @@ function isPalindrome(str) {
 	return str === revStr;
 }
 
-export { isPalindrome };
+// export { isPalindrome };
 // Test the function here
 // console.log(isPalindrome('dooode'));
 // console.log(isPalindrome('racecar'));
