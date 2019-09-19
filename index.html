@@ -21,16 +21,12 @@
 </head>
 <body>
   <p>Please enter a word:
-  <input type="text" id="userInput"=>give me input</input>
+  <input type="text" id="userInput"=></input>
   <button onclick="test()">Submit</button>
   </p>
  
 <h2 class="listHeading1">Is a Palindrome</h2>
-  <ol>
-    
-  </ol>
 
-<p id="demo"></p>
 
 <h2 class="listHeading2">Is not a Palindrome</h2>
 
@@ -39,7 +35,13 @@
     // JAVASCRIPT
   function test() {
     var userInput = document.getElementById("userInput").value;
-    document.getElementById("demo").innerHTML = userInput;
+    // document.getElementById("demo").innerHTML = userInput;
+      if (isPalindrome(userInput)) {
+    javascript:alert('This is a Palindrome!')
+
+  } else {
+    javascript:alert('This is NOT a Palindrome!')
+  }
   }
   // var input = document.getElementById("pal-word");
 
