@@ -10,7 +10,7 @@
   <style>
     /* CSS */
     .listHeading1 {
-      color: cyan;
+      color: darkblue;
     }
     .listHeading2 {
       color: darkred;
@@ -19,11 +19,21 @@
   </style>
   <script>
     // JAVASCRIPT
+  import { isPalindrome } from '/index.js';
+
   var input = document.getElementById("myInput");
-  input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13) {
-   event.preventDefault();
-   document.getElementById("myBtn").click();
+  if (isPalindrome(input)) {
+
+    input.addEventListener("keyup", function(event) {
+
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     document.getElementById("myBtn").click();
+
+  }
+
+
+
   }
 });
   </script>
@@ -36,6 +46,9 @@
   </p>
  
 <h2 class="listHeading1">Is a Palindrome</h2>
+  <ol>
+
+  </ol>
 
 
 <h2 class="listHeading2">Is not a Palindrome</h2>

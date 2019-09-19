@@ -16,16 +16,16 @@ function isPalindrome(str) {
 	return str === revStr;
 }
 
-
+export { isPalindrome };
 // Test the function here
-console.log(isPalindrome('dooode'));
-console.log(isPalindrome('racecar'));
-console.log(isPalindrome('taocat'));
-console.log(isPalindrome('anna'));
-console.log(isPalindrome('1oho1'));
-console.log(isPalindrome('hi ih'));
-console.log(isPalindrome('anna'));
-console.log(isPalindrome(10010));
-console.log(isPalindrome(101));
-console.log(isPalindrome('a'));
-console.log(isPalindrome('ab'));
+// console.log(isPalindrome('dooode'));
+// console.log(isPalindrome('racecar'));
+// console.log(isPalindrome('taocat'));
+// console.log(isPalindrome('anna'));
+// console.log(isPalindrome('1oho1'));
+// console.log(isPalindrome('hi ih'));
+// console.log(isPalindrome('anna'));
+// console.log(isPalindrome(10010));
+// console.log(isPalindrome(101));
+// console.log(isPalindrome('a'));
+// console.log(isPalindrome('ab'));
