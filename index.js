@@ -1,20 +1,34 @@
 
 // Here lies the palindrome checking function. Be amazed.
 
-function isPalindrome(str) {
 	// To be safe, let's convert the input to a string (incase an int is passed in)
-	str = str + '';
 	// now create an new empty string
-	var revStr = '';
-	
 	// then iterate through the original string, starting from the last letter and working backwards
-	for (var i = str.length-1; i >= 0; i--) { 
-		revStr = revStr + str[i]; // at each index, add the letter to the empty string, eventually creating a reversed string
-	}
+	// at each index, add the letter to the empty string, eventually creating a reversed string
 	// lastly compare the original string with the reversed string.
 	// If they are equal, then the word is a palindrome and return true. Else false.
-	return str === revStr;
+
+function isPalindrome() {
+	var str = document.getElementById("userInput");
+	str = str + '';
+	var reverseString = '';
+	for (var i = str.length-1; i >= 0; i--) { 
+		reverseString = reverseString + str[i]; 
+	}
+
+	if (reverseString === str) {
+		var node = document.createElement("LI");
+		var textnode = document.createTextNode(str);
+		// node.appendChild(textnode);
+		document.getElementById("isPal").appendChild(node);
+	} else {
+		var node = document.createElement("LI");
+		var textnode = document.createTextNode(str);
+		// node.appendChild(textnode);
+		document.getElementById("notPal").appendChild(node);
+	}
 }
+
 
 // export { isPalindrome };
 // Test the function here

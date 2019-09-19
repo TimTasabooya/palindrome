@@ -22,43 +22,21 @@
 <body>
   <p>Please enter a word:
   <input type="text" id="userInput"=></input>
-  <button onclick="test()">Submit</button>
+  <button onclick="isPalindrome()">Is this a palindrome?</button>
   </p>
  
 <h2 class="listHeading1">Is a Palindrome</h2>
-
+  <ul id="isPal">
+    <li></li>
+  </ul>
 
 <h2 class="listHeading2">Is not a Palindrome</h2>
+  <ul id="notPal">
 
+  </ul>
 
   <script type="text/javascript" src="index.js">
     // JAVASCRIPT
-  function test() {
-    var userInput = document.getElementById("userInput").value;
-    // document.getElementById("demo").innerHTML = userInput;
-      if (isPalindrome(userInput)) {
-    javascript:alert('This is a Palindrome!')
-
-  } else {
-    javascript:alert('This is NOT a Palindrome!')
-  }
-  }
-  // var input = document.getElementById("pal-word");
-
-  // input.addEventListener("keyup", function(event) {
-
-  // if (event.keyCode === 13) {
-  //   event.preventDefault();
-  //   document.getElementById("myBtn").click();
-  //     }
-  // });
-
-  // if (isPalindrome(input)) {
-  //   javascript:alert('This is a Palindrome!')
-
-  // } else {
-  //   javascript:alert('This is NOT a Palindrome!')
-  // }
 
 
   </script>
