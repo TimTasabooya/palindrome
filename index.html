@@ -21,14 +21,13 @@
 </head>
 <body>
   <p>Please enter a word:
-  <input type="text" id="pal-word">
-    <button id="myBtn">
-    Is it a Palindrome?</button>
+  <input type="text" id="userInput"=>give me input</input>
+  <button onClick="test()">Is it a Palindrome?</button>
   </p>
  
 <h2 class="listHeading1">Is a Palindrome</h2>
   <ol>
-
+    <li id="demo"></li>
   </ol>
 
 
@@ -37,24 +36,26 @@
 
   <script type="text/javascript" src="index.js">
     // JAVASCRIPT
-
-  var input = document.getElementById("pal-word");
-
-  input.addEventListener("keyup", function(event) {
-
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
-      }
-  });
-
-  if (isPalindrome(input)) {
-    javascript:alert('This is a Palindrome!')
-
-  } else {
-    javascript:alert('This is NOT a Palindrome!')
+  function test() {
+    var userInput = document.getElementById("userInput").value;
+    document.getElementById("demo").innerHTML = userInput;
   }
+  // var input = document.getElementById("pal-word");
 
+  // input.addEventListener("keyup", function(event) {
+
+  // if (event.keyCode === 13) {
+  //   event.preventDefault();
+  //   document.getElementById("myBtn").click();
+  //     }
+  // });
+
+  // if (isPalindrome(input)) {
+  //   javascript:alert('This is a Palindrome!')
+
+  // } else {
+  //   javascript:alert('This is NOT a Palindrome!')
+  // }
 
 
   </script>
