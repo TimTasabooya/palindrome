@@ -2,7 +2,10 @@
 // Here lies the palindrome checking function. Be amazed.
 
 function isPalindrome(str) {
-	var revStr = ''; // first create an empty string
+	// To be safe, let's convert the input to a string (incase an int is passed in)
+	str = str + '';
+	// now create an new empty string
+	var revStr = '';
 	
 	// then iterate through the original string, starting from the last letter and working backwards
 	for (var i = str.length-1; i >= 0; i--) { 
@@ -14,4 +17,15 @@ function isPalindrome(str) {
 }
 
 
+// Test the function here
 console.log(isPalindrome('dooode'));
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('taocat'));
+console.log(isPalindrome('anna'));
+console.log(isPalindrome('1oho1'));
+console.log(isPalindrome('hi ih'));
+console.log(isPalindrome('anna'));
+console.log(isPalindrome(10010));
+console.log(isPalindrome(101));
+console.log(isPalindrome('a'));
+console.log(isPalindrome('ab'));
