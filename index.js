@@ -9,23 +9,22 @@
 	// If they are equal, then the word is a palindrome and return true. Else false.
 
 function isPalindrome() {
-	var str = document.getElementById("userInput");
-	str = str + '';
+	var str = document.getElementById("userInput").value;
 	var reverseString = '';
 	for (var i = str.length-1; i >= 0; i--) { 
 		reverseString = reverseString + str[i]; 
 	}
 
-	if (reverseString === str) {
+	if (reverseString == str) {
 		var node = document.createElement("LI");
 		var textnode = document.createTextNode(str);
 		// node.appendChild(textnode);
-		document.getElementById("isPal").appendChild(node);
+		document.getElementById("isPal").appendChild(textnode).value;
 	} else {
 		var node = document.createElement("LI");
 		var textnode = document.createTextNode(str);
 		// node.appendChild(textnode);
-		document.getElementById("notPal").appendChild(node);
+		document.getElementById("notPal").appendChild(textnode).value;
 	}
 }
 
