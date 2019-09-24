@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="author" content="Tim Tasabia">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Palindrome Checker</title>
-  <style>
-    /* CSS */
-    .listHeading1 {
-      color: green;
-    }
-    .listHeading2 {
-      color: darkred;
-    }
 
-  </style>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Tim Tasabia">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palindrome Checker</title>
+    <style>
+        /* CSS */
+        
+        .wrapper {
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .div1 {
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            color: green;
+        }
+        
+        .div2 {
+            border: 2px solid goldenrod;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            height: 300px;
+            color: darkred;
+        }
+    </style>
 
 </head>
+
 <body>
-  <p>Please enter a word:
-  <input type="text" id="userInput"=></input>
-  <button onclick="isPalindrome()">Is this a palindrome?</button>
-  </p>
- 
-<h2 class="listHeading1">Is a Palindrome</h2>
-  <ul id="isPal">
-    <li></li>
-  </ul>
-
-<h2 class="listHeading2">Is not a Palindrome</h2>
-  <ul id="notPal">
-
-  </ul>
-
-  <script type="text/javascript" src="index.js">
-    // JAVASCRIPT
-
-
-  </script>
+    <div class="wrapper">
+        <p>Please enter a word:
+            <input type="text" id="userInput"=></input>
+            <button onclick="isPalindrome()">Is this a palindrome?</button>
+        </p>
+        <div class="div1">
+            <h2>Is a Palindrome</h2>
+            <ul id="isPal">
+            </ul>
+        </div>
+        <div class="div2">
+            <h2>Is not a Palindrome</h2>
+            <ul id="notPal">
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js">
+        // JAVASCRIPT
+    </script>
 </body>
+
 </html>
